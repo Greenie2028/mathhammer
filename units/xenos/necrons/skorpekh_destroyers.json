@@ -1,0 +1,74 @@
+{
+    "name": "Skorpekh Destroyers",
+    "aliases": ["skorpekhs", "Skorpekh destroyers", "skorpekh destroyers", "Skorpekhs"],
+    "faction": "Necrons",
+    "datasheet_version": "10th_edition",
+    "last_updated": "2026-03-15",
+    "model_options": [3, 6],
+    "toughness": 6,
+    "save": 3,
+    "wounds": 3,
+    "leadership": 7,
+    "oc": 2,
+    "invuln_save": null,
+    "feel_no_pain": null,
+    "keywords": ["Infantry", "Destroyer Cult", "Skorpekh Destroyers"],
+    "faction_keywords": ["Necrons"],
+    "innate_abilities": [
+        {
+            "name": "Whirling Onslaught (w/o charging)",
+            "description": "Each time a model in this unit makes a melee attack, re-roll a Hit roll of 1. If this unit made a charge move this turn, you can re-roll the Hit roll instead.",
+            "trigger": "HIT_ROLL",
+            "condition": "DID_NOT_CHARGE",
+            "effect": "REROLL_ONE_TO_HIT"
+        },
+        {
+            "name": "Whirling Onslaught (w/ charging)",
+            "description": "Each time a model in this unit makes a melee attack, re-roll a Hit roll of 1. If this unit made a charge move this turn, you can re-roll the Hit roll instead.",
+            "trigger": "HIT_ROLL",
+            "condition": "CHARGED",
+            "effect": "REROLL_HIT_ROLL"
+        }
+    ],
+    "weapons": [
+        {
+            "name": "Skorpekh hyperphase weapons",
+            "phase": "MELEE",
+            "type": "STANDARD", 
+            "attacks": 4,
+            "skill": 3,
+            "strength": 7,
+            "ap": -2,
+            "damage": 2,
+            "abilities": []
+        }
+    ],
+    "optional_upgrades": [
+        {
+            "name": "Plasmacyte",
+            "scaling": [
+                {
+                    "min_models": 3,
+                    "max_models": 5,
+                    "max_count": 1
+                },
+                {
+                    "min_models": 6,
+                    "max_models": 6,
+                    "max_count": 2
+                }
+            ],
+            "abilities": [
+                {
+                    "name": "Plasmacyte",
+                    "description": "Once per battle for each Plasmacyte this unit has, when this unit is selected to fight, you can use this ability. If you do, until the end of the phase, melee weapons equipped by models in this unit have the DEVASTATING WOUNDS ability.",
+                    "trigger": "FIGHT_PHASE_START",
+                    "condition": "ONCE_PER_BATTLE",
+                    "effect": "DEVESTATING_WOUNDS",
+                    "times_used": 0
+                }
+            ]
+        }
+    ],
+    "compatible_leaders": []
+}

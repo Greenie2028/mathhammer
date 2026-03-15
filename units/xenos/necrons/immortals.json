@@ -1,0 +1,79 @@
+{
+    "name": "Immortals",
+    "aliases": ["immortals"],
+    "faction": "Necrons",
+    "datasheet_version": "10th_edition",
+    "last_updated": "2026-03-15",
+    "models_options": [5, 10],
+    "toughness": 5,
+    "save": 3,
+    "wounds": 1,
+    "leadership": 7,
+    "oc": 2,
+    "invuln_save": null,
+    "feel_no_pain": null,
+    "keywords": ["Battleline", "Infantry", "Immortals"],
+    "faction_keywords": ["Necrons"],
+    "innate_abilities": [
+        {
+            "name": "Implacable Eradication",
+            "trigger": "WOUND_ROLL",
+            "condition": "ON_OBJECTIVE",
+            "effect": "REROLL_WOUND"
+        }
+    ],
+    "weapons": [
+        {
+            "name": "Gauss blaster",
+            "phase": "RANGED",
+            "type": "STANDARD",
+            "attacks": 2,
+            "skill": 3,
+            "strength": 5,
+            "ap": -1,
+            "damage": 1,
+            "abilities": ["LETHAL_HITS"]
+        },
+        {
+            "name": "Tesla carbine",
+            "phase": "RANGED",
+            "type": "Assault",
+            "attacks": 2,
+            "skill": 3,
+            "strength": 5,
+            "ap": 0,
+            "damage": 1,
+            "abilities": ["SUSTAINTED_HITS_2"]
+        },
+        {
+            "name": "Close combat weapon",
+            "phase": "MELEE",
+            "type": "STANDARD",
+            "attacks": 2,
+            "skill": 3,
+            "strength": 4,
+            "ap": 0,
+            "damage": 1,
+            "abilities": []
+        }
+    ],
+
+
+    "compatible_leaders": [
+        "Overlord",
+        "Overlord with Translocation Shroud",
+        "Lord [Legends]",
+        "Royal Warden",
+        "Anrakyr the Traveller [Legends]",
+        "Imotekh the Stormlord",
+        "Nemesor Zahndrekh [Legends]",
+        "Orikan the Diviner",
+        "Trazyn the Infinite",
+        "Vargard Obryon",
+        "Chronomancer",
+        "Geomancer",
+        "Plasmancer",
+        "Psychomancer",
+        "Technomancer"
+    ]
+}

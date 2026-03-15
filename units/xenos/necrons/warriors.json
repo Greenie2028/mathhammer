@@ -1,0 +1,68 @@
+{
+    "name": "Necron Warriors",
+    "aliases": ["necron warriors", "Necron warriors", "Warriors", "warriors"],
+    "datasheet_version": "10th_edition",
+    "last_updated": "2026-03-15",
+    "model_options": [10, 20],
+    "toughness": 4,
+    "save": 4,
+    "wounds": 1,
+    "leadership": 7,
+    "oc": 2,
+    "invuln_save": null,
+    "feel_no_pain": null,
+    "keywords": ["Battline", "Infantry", "Necron Warriors"],
+    "faction_keywords": ["Necrons"],
+    "innate_abilities": [],
+    "weapons": [
+        {
+            "name": "Gauss flayer",
+            "phase": "RANGED",
+            "type": "RAPID_FIRE_1",
+            "attacks": 1,
+            "skill": 4,
+            "strength": 4,
+            "ap": 0,
+            "damage": 1,
+            "abilities": ["LETHAL_HITS", "RAPID_FIRE_1"]
+        },
+        {
+            "name": "Gauss reaper",
+            "phase": "RANGED",
+            "type": "STANDARD",
+            "attacks": 2,
+            "skill": 4,
+            "strength": 4,
+            "ap": -1,
+            "damage": 1,
+            "abilities": ["LETHAL_HITS"]
+        },
+        {
+            "name": "Close combat weapons",
+            "phase": "MELEE",
+            "type": "STANDARD",
+            "attacks": 1,
+            "skill": 4,
+            "strength": 4,
+            "ap": 0,
+            "damage": 1,
+            "abilities": []
+        }
+    ],
+    "compatible_leaders": [
+        "Overlord",
+        "Overlord with Translocation Shroud",
+        "Lord [Legends]",
+        "Royal Warden",
+        "Imotekh the Stormlord",
+        "Nemesor Zahndrekh [Legends]",
+        "Orikan the Diviner",
+        "Trazyn the Infinite",
+        "Vargard Obryon",
+        "Chronomancer",
+        "Geomancer",
+        "Plasmancer",
+        "Psychomancer",
+        "Technomancer"
+    ]
+}

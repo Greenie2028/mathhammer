@@ -1,0 +1,47 @@
+{
+    "name": "Flayed Ones",
+    "aliases": ["flayed ones", "flayed", "Flayed"],
+    "faction": "Necrons",
+    "datasheet_version": "10th_edition",
+    "last_updated": "2026-03-15",
+    "model_options": [5, 10],
+    "toughness": 4,
+    "save": 4,
+    "wounds": 1,
+    "leadership": 7,
+    "oc": 1,
+    "invuln_save": null,
+    "feel_no_pain": null,
+    "keywords": ["Infantry", "Flayed Ones"],
+    "faction_keywords": ["Necrons"],
+    "innate_abilities": [
+        {
+            "name": "Flesh Hunger",
+            "description": "Each time a model in this unit makes a melee attack, if the target of that attack is Below Half-strength, a successful Hit roll scores a Critical Hit",
+            "trigger": "HIT_ROLL",
+            "condition": "ENEMY_HALF_STRENGTH",
+            "effect": "SUCCESSFUL_CRITICALS"
+        },
+        {
+            "name": "Stealth",
+            "description": "Each time a ranged attack is made against this unit, subtract 1 from that attack's Hit roll.",
+            "trigger": "HIT_ROLL_AGAINST",
+            "condition": "RANGED",
+            "effect": "MINUS_ONE_TO_HIT"
+        }
+    ],
+    "weapons": [
+        {
+            "name": "Flayer Claws",
+            "phase": "MELEE",
+            "type": "STANDARD", 
+            "attacks": 4,
+            "skill": 3,
+            "strength": 4,
+            "ap": -1,
+            "damage": 1,
+            "abilities": ["SUSTAITNED_HITS_1", "TWIN-LINKED"]
+        }
+    ],
+    "compatible_leaders": []
+}

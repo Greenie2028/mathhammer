@@ -1,0 +1,59 @@
+{
+    "name": "Ophydian Destroyers",
+    "aliases": ["Ophydians", "ophydians", "ophydian destroyers", "Ophydian destroyers"],
+    "faction": "Necrons",
+    "datasheet_version": "10th_edition",
+    "last_updated": "2026-03-15",
+    "model_options": [3, 6],
+    "toughness": 5,
+    "save": 4,
+    "wounds": 3,
+    "leadership": 7,
+    "oc": 2,
+    "invuln_save": null,
+    "feel_no_pain": null,
+    "keywords": ["Infantry", "Destroyer Cult", "Ophydian Destroyers"],
+    "faction_keywords": ["Necrons"],
+    "innate_abilities": [],
+    "weapons": [
+        {
+            "name": "Ophydian hyperphase weapons",
+            "phase": "MELEE",
+            "type": "STANDARD", 
+            "attacks": 5,
+            "skill": 3,
+            "strength": 4,
+            "ap": -2,
+            "damage": 2,
+            "abilities": []
+        }
+    ],
+    "optional_upgrades": [
+        {
+            "name": "Plasmacyte",
+            "scaling": [
+                {
+                    "min_models": 3,
+                    "max_models": 5,
+                    "max_count": 1
+                },
+                {
+                    "min_models": 6,
+                    "max_models": 6,
+                    "max_count": 2
+                }
+            ],
+            "abilities": [
+                {
+                    "name": "Plasmacyte",
+                    "description": "Once per battle for each Plasmacyte this unit has, when this unit is selected to fight, you can use this ability. If you do, until the end of the phase, melee weapons equipped by models in this unit have the DEVASTATING WOUNDS ability.",
+                    "trigger": "FIGHT_PHASE_START",
+                    "condition": "ONCE_PER_BATTLE",
+                    "effect": "DEVESTATING_WOUNDS",
+                    "times_used": 0
+                }
+            ]
+        }
+    ],
+    "compatible_leaders": []
+}

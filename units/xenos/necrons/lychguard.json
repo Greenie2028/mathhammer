@@ -1,0 +1,71 @@
+{
+    "name": "Lychguard",
+    "aliases": ["lychguard"],
+    "faction": "Necrons",
+    "datasheet_version": "10th_edition",
+    "last_updated": "2026-03-15",
+    "model_options": [5, 10],
+    "toughness": 5,
+    "save": 3,
+    "wounds": 2,
+    "leadership": 7,
+    "oc": 1,
+    "invuln_save": null,
+    "feel_no_pain": null,
+    "keywords": ["Infantry", "Lychguard"],
+    "faction_keywords": ["Necrons"],
+    "innate_abilities": [
+        {
+            "name": "Guardian Protocols",
+            "description": "While a NOBLE model is leading this unit, each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.",
+            "trigger": "WOUND_ROLL_AGAINST",
+            "condition": "LED_BY_NOBLE",
+            "effect": "MINUS_ONE_TO_WOUND"
+        }
+    ],
+    "wargear_options": [
+        {
+            "name": "Warscythe",
+            "invuln_save": null,
+            "weapons": [
+                {
+                    "name": "Warscythe",
+                    "phase": "MELEE",
+                    "type": "STANDARD",
+                    "attacks": 2,
+                    "skill": 3,
+                    "strength": 8,
+                    "ap": 3,
+                    "damage": 2,
+                    "abilities": ["DEVASTATING_WOUNDS"]
+                }
+            ]
+        },
+        {
+            "name": "Hyperphase sword and dispersion shield",
+            "invuln_save": 4,
+            "weapons": [
+                {
+                    "name": "Hyperphase sword",
+                    "phase": "MELEE",
+                    "type": "STANDARD",
+                    "attacks": 3,
+                    "skill": 3,
+                    "strength": 6,
+                    "ap": -2,
+                    "damage": 1,
+                    "abilities": []
+                }
+            ]
+        }
+    ],
+    "compatible_leaders": [
+        "Imotekh the Stormlord",
+        "Nemesor Zahndrekh [Legends]",
+        "Trazyn the Infinite",
+        "Vargard Obryon [Legends]",
+        "Lord [Legends]",
+        "Overlord",
+        "Overlord with Translocation Shroud"
+    ]
+}

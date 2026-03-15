@@ -1,0 +1,65 @@
+{
+    "name": "Triarch Praetorians",
+    "aliases": ["triarchs", "triarch praetorians", "Triarch praetorians", "Praetorians", "praetorians"],
+    "faction": "Necrons",
+    "datasheet_version": "10th_edition",
+    "last_updated": "2026-03-15",
+    "model_options": [5, 10],
+    "toughness": 5,
+    "save": 3,
+    "wounds": 2,
+    "leadership": 7,
+    "oc": 1,
+    "invuln_save": null,
+    "feel_no_pain": null,
+    "keywords": ["Infantry", "Fly", "Triarch Praetorians"],
+    "faction_keywords": ["Necrons"],
+    "innate_abilities": [],
+    "weapons": [
+        {
+            "name": "Rod of covenant",
+            "phase": "RANGED",
+            "type": "STANDARD", 
+            "attacks": 1,
+            "skill": 3,
+            "strength": 5,
+            "ap": -2,
+            "damage": 2,
+            "abilities": []
+        },
+        {
+            "name": "Rod of covenant",
+            "phase": "MELEE",
+            "type": "STANDARD",
+            "attacks": 3,
+            "skill": 3,
+            "strength": 5,
+            "ap": -2,
+            "damage": 2,
+            "abilities": []
+        },
+        {
+            "name": "Particle caster",
+            "phase": "RANGED",
+            "type": "STANDARD", 
+            "attacks": 3,
+            "skill": 3,
+            "strength": 5,
+            "ap": 0,
+            "damage": 1,
+            "abilities": ["PISTOL", "DEVASTATING_WOUNDS"]
+        },
+        {
+            "name": "Voidblade",
+            "phase": "MELEE",
+            "type": "STANDARD",
+            "attacks": 4,
+            "skill": 3,
+            "strength": 5,
+            "ap": -2,
+            "damage": 1,
+            "abilities": []
+        }
+    ],
+    "compatible_leaders": []
+}
