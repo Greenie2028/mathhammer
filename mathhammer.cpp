@@ -1,6 +1,22 @@
 /*
     TODO:
-    Set up json files for units
+    [ ] Set up json files for units
+    [ ] Manage units having leaders attached (possibly multiple leaders
+      like overlord and plasmancer)
+    [ ] Attaching non-character units together (ex. cryptothralls)
+    [ ] Set up json parsing
+    [ ] Set up units for testing
+    [ ] Get simulation working
+    - - Hits
+    - - Wounds
+    - - Saves
+    - - Feel No Pain
+    - - Dying models
+    - Note: Will have to manage melta and necrodermis effects
+
+    [ ] Optimize simulation for reasonable run time
+    [ ] Get user input working
+    [ ] Potentially: GUI
 */
 
 #include <nlohmann/json.hpp>
