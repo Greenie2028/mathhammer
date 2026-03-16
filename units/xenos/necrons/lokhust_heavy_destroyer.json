@@ -1,0 +1,95 @@
+{
+    "name": "Lokhust Heavy Destroyer",
+    "aliases": ["heavy destroyer", "lokhust heavies", "heavy lokhust"],
+    "faction": "Necrons",
+    "datasheet_version": "10th_edition",
+    "last_updated": "2026-03-16",
+    "model_options": [1, 2, 3],
+    "toughness": 6,
+    "save": 3,
+    "wounds": 4,
+    "leadership": 7,
+    "oc": 2,
+    "invuln_save": null,
+    "feel_no_pain": null,
+    "keywords": ["Mounted", "Fly", "Destroyer Cult", "Lokhust Heavy Destroyer"],
+    "faction_keywords": ["Necrons"],
+    "per_model_loadout": true,
+    "wargear_options": [
+        {
+            "name": "Enimitic exterminator",
+            "innate_abilities": [
+                {
+                    "name": "Optimized for Slaughter",
+                    "description": "Each time a model in this unit makes an attack with an Enimitic exterminator that targets a unit (excluding MONSTERS and VEHICLES), re-roll a Wound roll of 1. Each time a model in this unit makes an attack with a Gauss destructor against a MONSTER or VEHICLE unit, re-roll a Wound roll of 1.",
+                    "trigger": "WOUND_ROLL",
+                    "condition": "NOT_MONSTER_OR_VEHICLE",
+                    "effect": "REROLL_ONE_TO_WOUND"
+                }
+            ],
+            "weapons": [
+                {
+                    "name": "Enimitic exterminator",
+                    "phase": "RANGED",
+                    "type": ["HEAVY", "RAPID_FIRE_6"], 
+                    "attacks": 6,
+                    "skill": 3,
+                    "strength": 6,
+                    "ap": -1,
+                    "damage": 1,
+                    "abilities": ["SUSTAINED_HITS_1"]
+                },
+                {
+                    "name": "Close combat weapon",
+                    "phase": "MELEE",
+                    "type": "STANDARD", 
+                    "attacks": 2,
+                    "skill": 3,
+                    "strength": 4,
+                    "ap": 0,
+                    "damage": 1,
+                    "abilities": []
+                }
+            ]
+        },
+        {
+            "name": "Gauss destructor",
+            "innate_abilities": [
+                {
+                    "name":"Optimized for Slaughter",
+                    "description":"Each time a model in this unit makes an attack with an Enimitic exterminator that targets a unit (excluding MONSTERS and VEHICLES), re-roll a Wound roll of 1. Each time a model in this unit makes an attack with a Gauss destructor against a MONSTER or VEHICLE unit, re-roll a Wound roll of 1.",
+                    "trigger": "WOUND_ROLL",
+                    "condition": "MONSTER_OR_VEHICLE",
+                    "effect": "REROLL_ONE_TO_WOUND"
+                }
+            ],
+            "weapons": [
+                {
+                    "name": "Gauss destructor",
+                    "phase": "RANGED",
+                    "type": "HEAVY", 
+                    "attacks": 1,
+                    "skill": 3,
+                    "strength": 14,
+                    "ap": -4,
+                    "damage": 6,
+                    "abilities": ["LETHAL_HITS"]
+                },
+                {
+                    "name": "Close combat weapon",
+                    "phase": "MELEE",
+                    "type": "STANDARD", 
+                    "attacks": 2,
+                    "skill": 3,
+                    "strength": 4,
+                    "ap": 0,
+                    "damage": 1,
+                    "abilities": []
+                }
+            ]
+        }
+    ],
+    "compatible_leaders": [
+        "Lokhust Lord"
+    ]
+}

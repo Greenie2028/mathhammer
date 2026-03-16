@@ -1,0 +1,60 @@
+{
+    "name": "Lokhust Destroyer",
+    "aliases": ["Lokhust", "Lokhusts"],
+    "faction": "Necrons",
+    "datasheet_version": "10th_edition",
+    "last_updated": "2026-03-15",
+    "model_options": [1,2,3,4,5,6],
+    "toughness": 6,
+    "save": 3,
+    "wounds": 3,
+    "leadership": 7,
+    "oc": 2,
+    "invuln_save": null,
+    "feel_no_pain": null,
+    "keywords": ["Mounted", "Fly", "Destroyer Cult", "Lokhust Destroyer"],
+    "faction_keywords": ["Necrons"],
+    "innate_abilities": [
+        {
+            "name": "Hard-wired for Destruction (off objective)",
+            "description": "Each time a model in this unit makes a ranged attack that targets the closest eligible enemy unit, re-roll a Hit roll of 1. If the target is within range of an objective marker your opponent controls, you can reroll the Hit roll instead.",
+            "trigger": "HIT_ROLL",
+            "condition": "OFF_OBJECTIVE",
+            "effect": "REROLL_ONE_TO_HIT"
+        },
+        {
+            "name": "Hard-wired for Destruction (on objective)",
+            "description": "Each time a model in this unit makes a ranged attack that targets the closest eligible enemy unit, re-roll a Hit roll of 1. If the target is within range of an objective marker your opponent controls, you can reroll the Hit roll instead.",
+            "trigger": "HIT_ROLL",
+            "condition": "ON_OBJECTIVE",
+            "effect": "REROLL_HIT"
+        }
+    ],
+    "weapons": [
+        {
+            "name": "Gauss cannon",
+            "phase": "RANGED",
+            "type": "STANDARD", 
+            "attacks": 3,
+            "skill": 3,
+            "strength": 5,
+            "ap": -2,
+            "damage": 2,
+            "abilities": ["LETHAL_HITS"]
+        },
+        {
+            "name": "Close combat weapon",
+            "phase": "MELEE",
+            "type": "STANDARD", 
+            "attacks": 2,
+            "skill": 3,
+            "strength": 4,
+            "ap": 0,
+            "damage": 1,
+            "abilities": []
+        }
+    ],
+    "compatible_leaders": [
+        "Lokhust Lord"
+    ]
+}
